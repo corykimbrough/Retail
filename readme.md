@@ -32,4 +32,4 @@ All data (synthetic) stored as CSV files in the `/data` folder.
 - **Product Category Performance:** Stacked bar chart / tree map  
 - **Repeat Customer Rate:** KPI card  
 - **Cohort Analysis:** Heatmap showing retention and revenue by cohort
-All visualizations are stored in the `/visuals` folder and were created using Excel, Tableau, or R.
+There is a Tableau file that can be opened outside of my folders in the main database
