@@ -25,11 +25,10 @@ All data (synthetic) stored as CSV files in the `/data` folder.
 4. **Product & Category Performance** – Revenue and units sold per product/category  
 5. **Repeat Customer Rate** – Measures customer retention  
 6. **Cohort Analysis** – Tracks revenue by customer signup month over time
+All Code is in the Code folder
 
 ## Visualizations
 - **Monthly Revenue Trend:** Line chart  
 - **Top Customers:** Horizontal bar chart  
 - **Product Category Performance:** Stacked bar chart / tree map  
-- **Repeat Customer Rate:** KPI card  
-- **Cohort Analysis:** Heatmap showing retention and revenue by cohort
-There is a Tableau file that can be opened outside of my folders in the main database
+There is a Tableau workbook in the Tableau folder
