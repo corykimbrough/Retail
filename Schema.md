@@ -1,25 +1,3 @@
-retail-sql-analysis/
-│
-├── README.md
-├── data/
-│ ├── customers.csv
-│ ├── products.csv
-│ ├── orders.csv
-│ ├── order_items.csv
-│ └── returns.csv
-├── sql/
-│ ├── 01_total_revenue.sql
-│ ├── 02_monthly_revenue.sql
-│ ├── 03_top_customers.sql
-│ ├── 04_product_performance.sql
-│ ├── 05_repeat_customers.sql
-│ └── 06_cohort_analysis.sql
-└── visuals/
-├── monthly_revenue_line.png
-├── top_customers_bar.png
-├── product_category_chart.png
-├── repeat_customer_card.png
-└── cohort_heatmap.png
 ## Schema Diagram
 CUSTOMERS
 ---------
