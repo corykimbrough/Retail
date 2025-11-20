@@ -16,7 +16,6 @@ This project demonstrates SQL-based data analysis on a retail dataset. The datas
 - **Products:** 120  
 - **Order Items:** detailed per order  
 - **Returns:** 7% of orders returned  
-
 All data (synthetic) stored as CSV files in the `/data` folder.
 
 ## SQL Analyses Included
@@ -33,44 +32,4 @@ All data (synthetic) stored as CSV files in the `/data` folder.
 - **Product Category Performance:** Stacked bar chart / tree map  
 - **Repeat Customer Rate:** KPI card  
 - **Cohort Analysis:** Heatmap showing retention and revenue by cohort
-
 All visualizations are stored in the `/visuals` folder and were created using Excel, Tableau, or R.
-
-  
-
-
-## Schema Diagram
-CUSTOMERS
----------
-customer_id (PK)
-name
-signup_date
-location
-
-ORDERS
----------
-order_id (PK)
-customer_id (FK → customers.customer_id)
-order_date
-payment_method
-
-ORDER_ITEMS
----------
-order_item_id (PK)
-order_id (FK → orders.order_id)
-product_id (FK → products.product_id)
-quantity
-unit_price
-
-PRODUCTS
----------
-product_id (PK)
-category
-cost
-price
-
-RETURNS
----------
-order_id (FK → orders.order_id)
-return_date
-reason
