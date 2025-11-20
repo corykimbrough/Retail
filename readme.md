@@ -33,4 +33,4 @@ All Code is in the Code folder
 - **Top Customers:** Horizontal bar chart  
 - **Product Category Performance:** Stacked bar chart / tree map
 - **Cohort analysis:** Heatmap
-  **Look in the folder labeled "Tableau" for Tableau packaged workbook file**
+- **Look in the folder labeled "Tableau" for Tableau packaged workbook file**
