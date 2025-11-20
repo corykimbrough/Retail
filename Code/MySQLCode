@@ -1,0 +1,71 @@
+/* Total Revenue, Total Orders, Average Order Value */
+SELECT
+    COUNT(DISTINCT o.order_id) AS total_orders,
+    SUM(oi.quantity * oi.unit_price) AS total_revenue,
+    SUM(oi.quantity * oi.unit_price) / COUNT(DISTINCT o.order_id) AS avg_order_value
+FROM orders o
+JOIN order_items oi ON o.order_id = oi.order_id;
+
+/* Monthly Revenue Trend */
+SELECT 
+    DATE_FORMAT(o.order_date, '%Y-%m') AS ym,
+    SUM(oi.quantity * oi.unit_price) AS monthly_revenue
+FROM orders o
+JOIN order_items oi ON o.order_id = oi.order_id
+GROUP BY DATE_FORMAT(o.order_date, '%Y-%m')
+ORDER BY DATE_FORMAT(o.order_date, '%Y-%m');
+
+/* Top 10 Customers by Total Spending */
+SELECT
+    c.customer_id,
+    c.name,
+    SUM(oi.quantity * oi.unit_price) AS total_spent
+FROM customers c
+JOIN orders o ON c.customer_id = o.customer_id
+JOIN order_items oi ON o.order_id = oi.order_id
+GROUP BY c.customer_id, c.name
+ORDER BY total_spent DESC
+LIMIT 10;
+
+/* Product & Category Performance */
+SELECT
+    p.category,
+    p.product_id,
+    SUM(oi.quantity) AS units_sold,
+    SUM(oi.quantity * oi.unit_price) AS revenue
+FROM products p
+JOIN order_items oi ON p.product_id = oi.product_id
+GROUP BY p.category, p.product_id
+ORDER BY revenue DESC;
+
+/* Repeat Customer Rate */
+WITH order_counts AS (
+    SELECT
+        customer_id,
+        COUNT(order_id) AS num_orders
+    FROM orders
+    GROUP BY customer_id
+)
+SELECT
+    SUM(CASE WHEN num_orders > 1 THEN 1 ELSE 0 END) / COUNT(*) AS repeat_customer_rate
+FROM order_counts;
+
+/* Cohort Analysis */
+WITH cohort AS (
+    SELECT
+        c.customer_id,
+        DATE_FORMAT(c.signup_date, '%Y-%m') AS cohort_ym,
+        DATE_FORMAT(o.order_date, '%Y-%m') AS revenue_ym,
+        SUM(oi.quantity * oi.unit_price) AS revenue
+    FROM customers c
+    JOIN orders o ON c.customer_id = o.customer_id
+    JOIN order_items oi ON o.order_id = oi.order_id
+    GROUP BY c.customer_id, DATE_FORMAT(c.signup_date, '%Y-%m'), DATE_FORMAT(o.order_date, '%Y-%m')
+)
+SELECT
+    cohort_ym,
+    revenue_ym,
+    SUM(revenue) AS cohort_revenue
+FROM cohort
+GROUP BY cohort_ym, revenue_ym
+ORDER BY cohort_ym, revenue_ym;
