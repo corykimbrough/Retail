@@ -17,13 +17,7 @@ This project demonstrates SQL-based data analysis on a retail dataset. The datas
 - **Order Items:** detailed per order  
 - **Returns:** 7% of orders returned  
 All data (synthetic) stored as CSV files in the `/data` folder.
-
-## Visualizations
-- Tableau Cohort Heatmap
-- Tableau monthly revenue trends
-- Tableau Revenue by Category Visualization
-- Tableau KPI
-  **Look in the folder labeled "Tableau" for Tableau packaged workbook file**
+  
 
 ## SQL Analyses Included
 1. **Total Revenue, Orders, Average Order Value** – Basic business KPIs  
@@ -37,5 +31,6 @@ All Code is in the Code folder
 ## Visualizations
 - **Monthly Revenue Trend:** Line chart  
 - **Top Customers:** Horizontal bar chart  
-- **Product Category Performance:** Stacked bar chart / tree map  
-There is a Tableau workbook in the Tableau folder
+- **Product Category Performance:** Stacked bar chart / tree map
+- **Cohort analysis:** Heatmap
+  **Look in the folder labeled "Tableau" for Tableau packaged workbook file**
