@@ -1,4 +1,4 @@
-#Retail SQL Analytics Case Study 
+##Retail SQL Analytics Case Study 
 
 ## Overview
 This project demonstrates SQL-based data analysis on a retail dataset. The dataset includes customers, orders, order items, products, and returns. Showcases key SQL skills, including joins, aggregation, window functions, and cohort analysis, while generating actionable business insights.
