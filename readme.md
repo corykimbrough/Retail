@@ -14,7 +14,7 @@ This project demonstrates SQL-based data analysis on a retail dataset. The datas
   But more importantly also on retaining customers, and especially on attracting and retaining the relatively big spenders as they make up too significant a portion of the revenue to ignore.
  I recommend doing analysis or surveys on the high spending group. Also, on learning what is making cohorts weaken after the first couple of months, if possible.**
 **I would like more data to confirm this as there is just not enough history here, but if the trend is expected to be high for April and November, efforts could be put into more advertising and promotions centered around these times to maximize profits.**
-![Can not load image](Retail/Tableau/Dashboard.png)
+![Can not load image](Tableau/Dashboard.png)
   
 ## SQL Analyses Included
 1. **Total Revenue, Orders, Average Order Value** – Basic business KPIs  
