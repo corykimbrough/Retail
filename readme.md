@@ -31,7 +31,7 @@ This project demonstrates SQL-based data analysis on a retail dataset. The datas
 - **Product Category Performance:** Stacked bar chart / tree map
 - **Cohort analysis:** Heatmap
 - **Look in the folder labeled "Tableau" for Tableau packaged workbook file**
-- 
+  
 ## Dataset
 - **Customers:** 500  
 - **Orders:** 2,000  
