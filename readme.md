@@ -10,10 +10,10 @@ This project demonstrates SQL-based data analysis on a retail dataset. The datas
 - **Product Profitability:** Electronics category generates the highest profit margins  
 - **Customer Retention:** Repeat customers spend 2–3x more than first-time buyers  
 - **Cohort Analysis:** Retention and revenue drop significantly after month 2 for most cohorts
-- **The company could focus more on electronics where it profits most.
-  But more importantly also on retaining customers, and especially on attracting and retaining the relatively big spenders as they make up too significant a portion of the revenue to ignore.
- I recommend doing analysis or surveys on the high spending group. Also, on learning what is making cohorts weaken after the first couple of months, if possible.**
-**I would like more data to confirm this as there is just not enough history here, but if the trend is expected to be high for April and November, efforts could be put into more advertising and promotions centered around these times to maximize profits.**
+- **First recommendation to boost profits is for the company to focus more on electronics sales where it has the biggest profit margins.
+  Secondly, focus on retaining customers, especially on attracting/retaining the big spenders as they make up too significant a portion of revenue to ignore.
+  Finally, I recommend doing analysis or surveys on the high spending group as well as on what exactly is making cohorts weaken after the first couple of months, if possible.**
+- **I would like more data to confirm this as there is simply not enough history here, but if the revenue trend is expected to be high for April and November, efforts could be put into more advertising and promotions centered around these times to maximize sales volume for advertising dollars spent.**
 ![Can not load image](Tableau/Dashboard.png)
   
 ## SQL Analyses Included
