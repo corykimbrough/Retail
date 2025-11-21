@@ -2,7 +2,7 @@
 
 ## Overview
 This project demonstrates SQL-based data analysis on a retail dataset. The dataset includes customers, orders, order items, products, and returns. Showcases key SQL skills, including joins, aggregation, window functions, and cohort analysis, while generating actionable business insights. 
-- **Where should the company focus its efforts to produce more profit?**
+- **Where should the company focus its efforts to increase profits?**
 
 ## Business Insights
 - **Revenue Trends:** April and November are the highest revenue months  
